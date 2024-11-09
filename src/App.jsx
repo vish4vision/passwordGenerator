@@ -37,25 +37,25 @@ function App() {
   }, [length, numberAllowed, charAllowed, passwordGenerator])
   return (
     
-    <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-cyan-900 text-white">
-      <h1 className='text-white text-center my-3'>Password generator</h1>
+    <div className="w-full max-w-lg mx-auto shadow-md rounded-lg px-10 py-6 my-12 bg-purple-900 text-white">
+      <h1 className='text-white text-center my-2 mb-8 text-3xl drop-shadow-2xl'>Password generator</h1>
     <div className="flex shadow rounded-lg overflow-hidden mb-4">
         <input
             type="text"
             value={password}
-            className="outline-none w-full py-1 px-3 text-orange-600"
+            className="text-xl outline-none w-full py-1 px-3 text-orange-600"
             placeholder="Password"
             readOnly
             ref={passwordRef}
         />
         <button
         onClick={copyPasswordToClipboard}
-        className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'
+        className='outline-none bg-orange-600 text-white px-3 py-0.5 shrink-0'
         >copy</button>
         
     </div>
-    <div className='flex text-sm gap-x-2'>
-      <div className='flex items-center gap-x-1'>
+    <div className='flex text-sm gap-x-4'>
+      <div className='flex items-center gap-x-2'>
         <input 
         type="range"
         min={6}
