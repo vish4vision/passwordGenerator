@@ -51,9 +51,13 @@ function App() {
  
         <button 
 onClick={copyPasswordToClipboard}
-className="relative 
-outline-none bg-yellow-500
-before:ease relative overflow-hidden text-slate-900 shadow-2xl transition-all before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-orange-500 before:duration-300 hover:text-white hover:shadow-orange-500 hover:before:h-64 hover:before:-translate-y-32 px-5 py-0.5 shrink-0">
+className="outline-none bg-yellow-500
+before:ease relative overflow-hidden text-slate-900 
+shadow-2xl transition-all before:absolute before:top-1/2 
+before:h-0 before:w-64 before:origin-center 
+before:-translate-x-20 before:rotate-45 before:bg-orange-500 
+before:duration-300 hover:text-white hover:shadow-orange-500 
+hover:before:h-64 hover:before:-translate-y-32 px-5 py-0.5 shrink-0">
 <span className="relative z-10">COPY</span></button>
         
     </div>
